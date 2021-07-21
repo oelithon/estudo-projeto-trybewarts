@@ -42,3 +42,17 @@ main {
   display: flex;
   height: 500px;
 }
+
+/* Forms */
+.radioButton {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.radioLabel {
+  display: flex;
+  flex-direction: row-reverse;
+  align-self: flex-start;
+  padding: 5px 0;
+}
