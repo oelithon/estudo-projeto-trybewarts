@@ -11,3 +11,16 @@ function verificarLogin() {
 }
 
 buttonLogin.addEventListener('click', verificarLogin);
+
+const botaoEnviar = document.getElementById('submit-btn');
+const checkBox = document.getElementById('agreement');
+botaoEnviar.disabled = true;
+
+function habilitaEnviar() {
+  if (checkBox.checked === true) {
+    botaoEnviar.disabled = false;
+  } else {
+    botaoEnviar.disabled = true;
+  }
+}
+checkBox.addEventListener('click', habilitaEnviar);
